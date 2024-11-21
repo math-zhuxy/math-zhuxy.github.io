@@ -24,6 +24,7 @@ workbox.routing.registerRoute(
                 maxAgeSeconds: 7 * 24 * 60 * 60, // 设置最长请求时间7天
             }),
         ],
+        networkTimeoutSeconds: 5, // 设置网络超时时间为 5 秒
     })
 );
 
